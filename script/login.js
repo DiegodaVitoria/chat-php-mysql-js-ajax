@@ -9,7 +9,7 @@ form.onsubmit = (e) =>{
 continueBtn.onclick = () =>{
  //começando o Ajax
  let xhr = new XMLHttpRequest(); // criando objeto XML
- xhr.open("POST", "./php/login.php", true);
+ xhr.open("POST", "php/login.php", true);
  xhr.onload = ()=> {
   if(xhr.readyState === XMLHttpRequest.DONE){
    if(xhr.status === 200){
@@ -26,6 +26,6 @@ continueBtn.onclick = () =>{
 
  // temos que enviar os dados do formulário através de ajax para php
 
- let formData= new FormData(form); // criando novo FormData objeto
+ let formData = new FormData(form); // criando novo FormData objeto
  xhr.send(formData); // enviando os dados do formulario para  o php
 }

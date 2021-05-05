@@ -273,7 +273,7 @@ body{
 /* Quando a class estiver em offline no php */
 
 .users-list a .status-dot.offline{
- color: #ccc;
+ color: #ff0000;
 }
 
 /* Chat */
